@@ -1,0 +1,8 @@
+discord.py
+pandas
+openpyxl
+mysql-connector-python
+chat-exporter>=2.5.0
+python-dotenv
+aiohttp
+xlsxwriter

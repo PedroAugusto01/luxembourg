@@ -1,0 +1,26 @@
+# TemplateBot/docker-compose.yml
+
+version: '3.8'
+services:
+  bot:
+    build: .
+    restart: always
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      # Arquivos de contagem de tickets
+      - ./ticket_count.txt:/usr/src/app/ticket_count.txt
+      - ./ticket_count_geral.txt:/usr/src/app/ticket_count_geral.txt
+      - ./ticket_count_fotos.txt:/usr/src/app/ticket_count_fotos.txt
+      - ./ticket_count_roupas.txt:/usr/src/app/ticket_count_roupas.txt
+      - ./ticket_count_suporte.txt:/usr/src/app/ticket_count_suporte.txt
+
+      # Banco de dados e configurações de módulos
+      - ./server/funcionalidades/whitelist/whitelist_db.json:/usr/src/app/server/funcionalidades/whitelist/whitelist_db.json
+      - ./server/funcionalidades/multi_tickets/horarios_agendados.json:/usr/src/app/server/funcionalidades/multi_tickets/horarios_agendados.json
+      - ./reaction_roles_data.json:/usr/src/app/reaction_roles_data.json
+      - ./licencas_ativas.json:/usr/src/app/licencas_ativas.json
+
+      # Arquivos de configuração essenciais
+      - ./config:/usr/src/app/config

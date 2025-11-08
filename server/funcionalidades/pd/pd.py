@@ -105,10 +105,10 @@ class PDCog(commands.Cog):
             embed_log.set_thumbnail(url=membro_alvo.display_avatar.url)
         
         # Usei a seta animada de outros módulos seus para consistência
-        embed_log.add_field(name="<a:SetaDireita:1418996596699566164> Membro Afetado", value=f"{membro_alvo.mention} (`{membro_alvo.display_name}`)", inline=False)
-        embed_log.add_field(name="<a:SetaDireita:1418996596699566164> ID no Jogo", value=f"`{id}`", inline=False)
-        embed_log.add_field(name="<a:SetaDireita:1418996596699566164> Motivo", value=f"```\n{motivo}\n```", inline=False)
-        embed_log.add_field(name="<a:SetaDireita:1418996596699566164> Aplicado por", value=ctx.author.mention, inline=False)
+        embed_log.add_field(name="<a:SetaDireita:1436757674124378222> Membro Afetado", value=f"{membro_alvo.mention} (`{membro_alvo.display_name}`)", inline=False)
+        embed_log.add_field(name="<a:SetaDireita:1436757674124378222> ID no Jogo", value=f"`{id}`", inline=False)
+        embed_log.add_field(name="<a:SetaDireita:1436757674124378222> Motivo", value=f"```\n{motivo}\n```", inline=False)
+        embed_log.add_field(name="<a:SetaDireita:1436757674124378222> Aplicado por", value=ctx.author.mention, inline=False)
         
         embed_log.set_footer(text=f"ID do Membro: {membro_alvo.id} • ID do Autor: {ctx.author.id}")
 
@@ -147,7 +147,7 @@ class PDCog(commands.Cog):
             embed.set_thumbnail(url=self.bot.user.display_avatar.url)
 
         # Footer padrão do seu bot
-        embed.set_footer(text="BOT Diamond — Copyright © Pedro Kazoii")
+        embed.set_footer(text="BOT Luxemburgo — Copyright © Pedro Kazoii")
 
         await ctx.send(embed=embed)
         

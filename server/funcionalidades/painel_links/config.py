@@ -6,7 +6,7 @@ import discord
 ID_CANAL_PAINEL = 1347904633057710154
 
 # Título e descrição da embed.
-TITULO_EMBED = "Sejam bem vindos à Diamond!\nA melhor organização do Complexo RJ! 🚀"
+TITULO_EMBED = "Sejam bem vindos à Luxemburgo!\nA melhor organização do Complexo RJ! 🚀"
 DESCRICAO_EMBED = "Selecione abaixo uma opção de acordo com a necessidade que deseja."
 
 # Cor da embed (formato 0xRRGGBB).

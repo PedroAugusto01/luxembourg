@@ -3,20 +3,19 @@
 # --- MÓDULO DE AÇÕES ---
 
 # ID do canal onde o comando para criar o painel de ação será enviado.
-ID_CANAL_COMANDO = 1357064394785296384
+ID_CANAL_COMANDO = 1436756148542898257
 
 # ID do canal para onde as embeds das ações marcadas serão enviadas.
-ID_CANAL_ACOES = 1410657298430427176
+ID_CANAL_ACOES = 1436756164212686879
 
 # Lista de IDs de cargos que podem marcar/gerenciar ações.
 IDS_CARGOS_PERMITIDOS = [
-    1408891454490935387, # GERENTE ELITE 
-    1347904626678300719, # SUB ELITES & AÇÃO 
-    1347904626669916174, # GERENTE DE AÇÃO 
-    1347904626669916177, # GERENTE DIAMOND 
-    1347904626678300722, # Sub-Lider
-    1347904626690625547, # Lider
-    1347904626690625548 # DEV
+    1434643759735242823, # 00
+    1434559390823747602, # Sub-Lider
+    1434559390836592720, # Dono
+    1434559390823747603, # Chave
+    1436168481266470922, # Gerente elite
+    1436750681582207168 # Gerente ações
 ]
 
 # Fuso horário para as notificações (Ex: 'America/Sao_Paulo')

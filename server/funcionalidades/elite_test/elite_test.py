@@ -152,7 +152,7 @@ class TesteEliteModal(ui.Modal, title="Abrir Teste para a Elite"):
     async def on_submit(self, interaction: Interaction):
         await interaction.response.defer(ephemeral=True)
         embed = Embed(description=(
-                            "# <a:gun:1419161276759670924> • • TESTE DA ELITE ABERTO • • <a:gun:1419161276759670924>\n\n"
+                            "# <a:gun:1436757672312443093> • • TESTE DA ELITE ABERTO • • <a:gun:1436757672312443093>\n\n"
                             f"**Data:** {self.data.value}\n**Horário:** {self.horario.value}\n\n**Inscritos:**\nNenhum inscrito ainda."
                         ),
                       color=discord.Color.gold())
@@ -174,9 +174,9 @@ class EliteTestCog(commands.Cog):
         target_channel_id = module_config.ID_CANAL_COMANDO
         target_channel = ctx.guild.get_channel(target_channel_id) if target_channel_id != 0 else ctx.channel
 
-        embed = Embed(description=("# <a:gun:1419161276759670924> • • TESTE PARA A ELITE • • <a:gun:1419161276759670924>\n\n"
-                                    "<a:SetaDireita:1418996596699566164> Clique no botão abaixo para abrir um **TESTE ELITE.**\n\n"
-                                    "<a:SetaDireita:1418996596699566164> Apenas um **RESP ELITE** pode abrir um novo teste."),
+        embed = Embed(description=("# <a:gun:1436757672312443093> • • TESTE PARA A ELITE • • <a:gun:1436757672312443093>\n\n"
+                                    "<a:SetaDireita:1436757674124378222> Clique no botão abaixo para abrir um **TESTE ELITE.**\n\n"
+                                    "<a:SetaDireita:1436757674124378222> Apenas um **RESP ELITE** pode abrir um novo teste."),
                       color=discord.Color.gold())
         view = ui.View(timeout=None)
         view.add_item(ui.Button(label="Abrir TESTE elite", style=ButtonStyle.gray, emoji="🔫", custom_id="abrir_teste_elite"))

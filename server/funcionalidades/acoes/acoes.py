@@ -25,8 +25,8 @@ def parse_embed_data(embed: Embed):
     data = {}
     if not embed.description: return data
     
-    inscritos_match = re.search(r"\*\*<a:SetaDireita:1418996596699566164> Inscritos \(\d+/(\d+)\):?\*\*\n(.*?)\n\n", embed.description, re.DOTALL)
-    reservas_match = re.search(r"\*\*<a:SetaDireita:1418996596699566164> Reservas \(\d+/(\d+)\):?\*\*\n(.*)", embed.description, re.DOTALL)
+    inscritos_match = re.search(r"\*\*<a:SetaDireita:1436757674124378222> Inscritos \(\d+/(\d+)\):?\*\*\n(.*?)\n\n", embed.description, re.DOTALL)
+    reservas_match = re.search(r"\*\*<a:SetaDireita:1436757674124378222> Reservas \(\d+/(\d+)\):?\*\*\n(.*)", embed.description, re.DOTALL)
 
     data['limite_inscritos'] = int(inscritos_match.group(1)) if inscritos_match else 0
     data['inscritos'] = [int(uid) for uid in re.findall(r'<@(\d+)>', inscritos_match.group(2))] if inscritos_match else []
@@ -54,8 +54,8 @@ async def atualizar_embed_acao(message: discord.Message, novos_inscritos: list[i
         f"{participantes_line}\n\n"
         f"{data_line}\n\n"
         f"{premio_line}\n\n"
-        f"**<a:SetaDireita:1418996596699566164> Inscritos ({len(novos_inscritos)}/{limite_inscritos}):**\n{inscritos_str}\n\n"
-        f"**<a:SetaDireita:1418996596699566164> Reservas ({len(novos_reservas)}/{limite_reservas}):**\n{reservas_str}"
+        f"**<a:SetaDireita:1436757674124378222> Inscritos ({len(novos_inscritos)}/{limite_inscritos}):**\n{inscritos_str}\n\n"
+        f"**<a:SetaDireita:1436757674124378222> Reservas ({len(novos_reservas)}/{limite_reservas}):**\n{reservas_str}"
     )
     await message.edit(embed=embed)
 
@@ -184,12 +184,12 @@ class MarcarAcaoModal(ui.Modal, title="Marcar Nova Ação"):
             color=discord.Color.blue()
         )
         embed.description = (
-            f"# <a:gun:1419161276759670924> • • AÇÃO MARCADA: {self.tipo_acao.value.upper()} • • <a:gun:1419161276759670924>\n\n"
-            f"**<a:SetaDireita:1418996596699566164> Participantes ({num_participantes}) e Vagas Reserva ({num_reservas})**\n\n"
-            f"**<a:SetaDireita:1418996596699566164> Data e Hora:** {self.data_hora.value}\n\n"
-            f"**<a:SetaDireita:1418996596699566164> Prêmio:** {self.premio.value}\n\n"
-            f"**<a:SetaDireita:1418996596699566164> Inscritos (0/{num_participantes}):**\nNenhuma inscrição.\n\n"
-            f"**<a:SetaDireita:1418996596699566164> Reservas (0/{num_reservas}):**\nNenhuma reserva."
+            f"# <a:gun:1436757672312443093> • • AÇÃO MARCADA: {self.tipo_acao.value.upper()} • • <a:gun:1436757672312443093>\n\n"
+            f"**<a:SetaDireita:1436757674124378222> Participantes ({num_participantes}) e Vagas Reserva ({num_reservas})**\n\n"
+            f"**<a:SetaDireita:1436757674124378222> Data e Hora:** {self.data_hora.value}\n\n"
+            f"**<a:SetaDireita:1436757674124378222> Prêmio:** {self.premio.value}\n\n"
+            f"**<a:SetaDireita:1436757674124378222> Inscritos (0/{num_participantes}):**\nNenhuma inscrição.\n\n"
+            f"**<a:SetaDireita:1436757674124378222> Reservas (0/{num_reservas}):**\nNenhuma reserva."
         )
         embed.set_footer(text=f"Ação marcada por: {interaction.user.display_name}")
         
@@ -235,7 +235,7 @@ class AcoesCog(commands.Cog):
             
             try:
                 # CORREÇÃO: Extrai data e hora de forma segura
-                data_hora_match = re.search(r"\*\*<a:SetaDireita:1418996596699566164> Data e Hora:\*\* (.*)", embed.description)
+                data_hora_match = re.search(r"\*\*<a:SetaDireita:1436757674124378222> Data e Hora:\*\* (.*)", embed.description)
                 if not data_hora_match:
                     continue
                 
@@ -280,13 +280,13 @@ class AcoesCog(commands.Cog):
             
         embed = Embed(
             description=(
-                f"# <a:gun:1419161276759670924> MARCAR AÇÃO <a:gun:1419161276759670924>\n\n"
+                f"# <a:gun:1436757672312443093> MARCAR AÇÃO <a:gun:1436757672312443093>\n\n"
                 f"`Clique no botão abaixo e preencha as informações:`\n\n"
-                f"**<a:SetaDireita:1418996596699566164> Tipo de ação:**\n\n"
-                f"**<a:SetaDireita:1418996596699566164> Quantidade de Participantes:**\n\n"
-                f"**<a:SetaDireita:1418996596699566164> Quantidade de Reservas:**\n\n"
-                f"**<a:SetaDireita:1418996596699566164> Data e Hora:**\n\n"
-                f"**<a:SetaDireita:1418996596699566164> Prêmio:**"
+                f"**<a:SetaDireita:1436757674124378222> Tipo de ação:**\n\n"
+                f"**<a:SetaDireita:1436757674124378222> Quantidade de Participantes:**\n\n"
+                f"**<a:SetaDireita:1436757674124378222> Quantidade de Reservas:**\n\n"
+                f"**<a:SetaDireita:1436757674124378222> Data e Hora:**\n\n"
+                f"**<a:SetaDireita:1436757674124378222> Prêmio:**"
             ),
             color=discord.Color.orange()
         )

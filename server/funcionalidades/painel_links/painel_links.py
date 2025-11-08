@@ -22,7 +22,7 @@ class PainelLinksCog(commands.Cog):
         )
         
         embed.set_thumbnail(url="attachment://logo.gif")
-        embed.set_footer(text="BOT Diamond — Copyright © Pedro Kazoii")
+        embed.set_footer(text="BOT Luxemburgo — Copyright © Pedro Kazoii")
         
         # Cria a única View que irá conter todos os botões.
         view = ui.View(timeout=None)

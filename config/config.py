@@ -10,7 +10,7 @@ MODULOS_ATIVOS = {
     'server.funcionalidades.tickets.tickets':               False,
     'server.funcionalidades.autorole.autorole':             False,
     'server.funcionalidades.protection.protection':         False,
-    'server.funcionalidades.logs.logs':                     False,
+    'server.funcionalidades.logs.logs':                     True,
     'server.funcionalidades.dynamic_role.dynamic_role':     False,
     'server.funcionalidades.reaction_roles.reaction_roles': False,
     'server.funcionalidades.licenca.licenca':               False,
@@ -19,11 +19,12 @@ MODULOS_ATIVOS = {
     'server.funcionalidades.welcome.welcome':               False,
     'server.funcionalidades.role_selector.role_selector':   False,
     'server.funcionalidades.utils.utils':                   False,
-    'server.funcionalidades.elite_test.elite_test':         False,
-    'server.funcionalidades.acoes.acoes':                   False,
+    'server.funcionalidades.elite_test.elite_test':         True,
+    'server.funcionalidades.acoes.acoes':                   True,
     'server.funcionalidades.hierarquia.hierarquia':         False,
     'server.funcionalidades.painel_links.painel_links':     False,
-    'server.funcionalidades.pd.pd':                         False,
+    'server.funcionalidades.pd.pd':                         True,
+    'server.funcionalidades.advertencia.advertencia':       True,
 }
 
 # Nome para LOG

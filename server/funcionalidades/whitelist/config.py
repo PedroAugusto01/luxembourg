@@ -29,7 +29,7 @@ NOME_ARQUIVO_BANNER = "banner_wl.png"
 EMBED = discord.Embed(
     title=":clipboard: RECRUTAMENTO :clipboard:",
     description=(
-        "<a:SetaDireita:1418996596699566164> Para realizar o recrutamento, clique no botão abaixo e preencha com as seguintes informações: \n"
+        "<a:SetaDireita:1436757674124378222> Para realizar o recrutamento, clique no botão abaixo e preencha com as seguintes informações: \n"
         "```NOME E SOBRENOME: \n"
         "SEU ID: \n"
         "TELEFONE NA CIDADE: \n"

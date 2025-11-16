@@ -3,10 +3,10 @@
 # --- MÓDULO DE AÇÕES ---
 
 # ID do canal onde o comando para criar o painel de ação será enviado.
-ID_CANAL_COMANDO = 1436756148542898257
+ID_CANAL_COMANDO = 1439698545010544640
 
 # ID do canal para onde as embeds das ações marcadas serão enviadas.
-ID_CANAL_ACOES = 1436756164212686879
+ID_CANAL_ACOES = 1439698681774211083
 
 # Lista de IDs de cargos que podem marcar/gerenciar ações.
 IDS_CARGOS_PERMITIDOS = [
